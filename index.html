@@ -515,95 +515,95 @@
 
     <!-- 07. Sertifikat -->
    <!-- 07. Sertifikat -->
-<section id="sertifikat" class="py-16 sm:py-24 bg-slate-50 px-4">
-            <div class="max-w-7xl mx-auto">
-                <div class="flex items-center gap-4 sm:gap-6 mb-8 sm:mb-12">
-                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">07. Sertifikat</h2>
-                    <div class="h-1 bg-indigo-100 flex-1 rounded-full"></div>
+section id="sertifikat" class="py-16 sm:py-24 bg-slate-50 px-4">
+    <div class="max-w-7xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 text-center mb-12">Sertifikat</h2>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            
+            <!-- Sertifikat Kompetensi -->
+            <div class="bg-white p-3 sm:p-4 rounded-xl shadow-sm border border-slate-100 flex flex-col justify-between">
+                <!-- Ubah container tinggi di mobile jadi 60vh agar panjang, tapi tetap proporsional (aspect 4/3) di desktop -->
+                <div class="h-[60vh] sm:aspect-[4/3] sm:h-auto overflow-hidden rounded-lg border border-slate-200 relative group cursor-pointer">
+                    <a href="media/sertifikat/Sertifikasi Kompetensi.pdf" target="_blank" class="absolute inset-0 z-10 block" title="Buka PDF Penuh"></a>
+                    <!-- Menggunakan tag OBJECT sebagai pembungkus utama -->
+                    <object data="media/sertifikat/Sertifikasi Kompetensi.pdf" type="application/pdf" class="w-full h-full pointer-events-none">
+                        <!-- Fallback jika object gagal dimuat -->
+                        <iframe src="media/sertifikat/Sertifikasi Kompetensi.pdf" class="w-full h-full pointer-events-none border-0"></iframe>
+                    </object>
                 </div>
-                
-                <p class="text-slate-600 text-sm sm:text-lg mb-8 sm:mb-10 text-center max-w-3xl mx-auto">
-                    Berikut adalah beberapa sertifikat keahlian dan dokumentasi magang yang telah saya capai selama menempuh pendidikan.
-                </p>
-                
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8">
-                    
-                    <!-- Sertifikat Kompetensi (Diubah menjadi TAG IMG agar langsung tampil sempurna di Android/Mobile) -->
-                    <div class="bg-white p-3 sm:p-4 rounded-xl sm:rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between">
-                        <div class="aspect-[4/3] overflow-hidden rounded-lg border border-slate-200 relative group cursor-zoom-in" onclick="openLightbox(this.querySelector('img').src)">
-                            <!-- Pastikan Anda sudah mengonversi PDF menjadi file gambar (.jpg / .png) -->
-                            <img src="media/sertifikat/Sertifikasi Kompetensi.jpg" onerror="this.src='https://placehold.co/800x600/f8fafc/4f46e5?text=Sertifikat+Kompetensi'" alt="Sertifikat Kompetensi" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                            <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
-                                <i class="fas fa-search-plus text-white text-3xl"></i>
-                            </div>
-                        </div>
-                        <p class="mt-3 sm:mt-4 font-bold text-slate-900 text-center text-xs sm:text-sm">Sertifikat Kompetensi</p>
-                    </div>
-                    
-                    <!-- Sertifikat Magang (Diubah menjadi TAG IMG) -->
-                    <div class="bg-white p-3 sm:p-4 rounded-xl sm:rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between">
-                        <div class="aspect-[4/3] overflow-hidden rounded-lg border border-slate-200 relative group cursor-zoom-in" onclick="openLightbox(this.querySelector('img').src)">
-                            <img src="media/sertifikat/CamScanner 01-10-25 22.38.jpg" onerror="this.src='https://placehold.co/800x600/f8fafc/4f46e5?text=Sertifikat+Magang'" alt="Sertifikat Magang" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                            <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
-                                <i class="fas fa-search-plus text-white text-3xl"></i>
-                            </div>
-                        </div>
-                        <p class="mt-3 sm:mt-4 font-bold text-slate-900 text-center text-xs sm:text-sm">Sertifikat Magang</p>
-                    </div>
-                    
-                    <!-- Sertifikat Partisipasi (Slider Gambar) -->
-                    <div class="bg-white p-3 sm:p-4 rounded-xl sm:rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between sm:col-span-2 lg:col-span-1">
-                        <div class="aspect-[4/3] overflow-hidden rounded-lg relative border border-slate-200">
-                            <div class="swiper sertifikatSwiper swiper-sm w-full h-full">
-                                <div class="swiper-wrapper">
-                                    
-                                    <div class="swiper-slide relative cursor-zoom-in group" onclick="openLightbox(this.querySelector('img').src)">
-                                        <img src="media/sertifikat/get-file 5.jpg" onerror="this.src='https://placehold.co/800x600/f8fafc/4f46e5?text=Partisipasi+1'" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                                        <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
-                                            <i class="fas fa-search-plus text-white text-3xl"></i>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide relative cursor-zoom-in group" onclick="openLightbox(this.querySelector('img').src)">
-                                        <img src="media/sertifikat/get-file 6.jpg" onerror="this.src='https://placehold.co/800x600/e2e8f0/4f46e5?text=Partisipasi+2'" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                                        <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
-                                            <i class="fas fa-search-plus text-white text-3xl"></i>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide relative cursor-zoom-in group" onclick="openLightbox(this.querySelector('img').src)">
-                                        <img src="media/sertifikat/get-file 7.jpg" onerror="this.src='https://placehold.co/800x600/f8fafc/4f46e5?text=Partisipasi+3'" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                                        <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
-                                            <i class="fas fa-search-plus text-white text-3xl"></i>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide relative cursor-zoom-in group" onclick="openLightbox(this.querySelector('img').src)">
-                                        <img src="media/sertifikat/get-file 8.jpg" onerror="this.src='https://placehold.co/800x600/e2e8f0/4f46e5?text=Partisipasi+4'" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                                        <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
-                                            <i class="fas fa-search-plus text-white text-3xl"></i>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide relative cursor-zoom-in group" onclick="openLightbox(this.querySelector('img').src)">
-                                        <img src="media/sertifikat/get-file 9.jpg" onerror="this.src='https://placehold.co/800x600/f8fafc/4f46e5?text=Partisipasi+5'" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                                        <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
-                                            <i class="fas fa-search-plus text-white text-3xl"></i>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="swiper-pagination"></div>
-                                <div class="swiper-button-next hidden sm:flex" onclick="event.stopPropagation()"></div>
-                                <div class="swiper-button-prev hidden sm:flex" onclick="event.stopPropagation()"></div>
-                            </div>
-                        </div>
-                        <p class="mt-3 sm:mt-4 font-bold text-slate-900 text-center text-xs sm:text-sm">Sertifikat Partisipasi</p>
-                    </div>
-                    
-                </div>
+                <p class="mt-4 font-bold text-slate-900 text-center text-sm">Sertifikat Kompetensi</p>
             </div>
-        </section>
+            
+            <!-- Sertifikat Magang -->
+            <div class="bg-white p-3 sm:p-4 rounded-xl shadow-sm border border-slate-100 flex flex-col justify-between">
+                <div class="h-[60vh] sm:aspect-[4/3] sm:h-auto overflow-hidden rounded-lg border border-slate-200 relative group cursor-pointer">
+                    <a href="media/sertifikat/CamScanner 01-10-25 22.38.pdf" target="_blank" class="absolute inset-0 z-10 block" title="Buka PDF Penuh"></a>
+                    <object data="media/sertifikat/CamScanner 01-10-25 22.38.pdf" type="application/pdf" class="w-full h-full pointer-events-none">
+                        <iframe src="media/sertifikat/CamScanner 01-10-25 22.38.pdf" class="w-full h-full pointer-events-none border-0"></iframe>
+                    </object>
+                </div>
+                <p class="mt-4 font-bold text-slate-900 text-center text-sm">Sertifikat Magang</p>
+            </div>
+            
+            <!-- Sertifikat Partisipasi (Slider) -->
+            <div class="bg-white p-3 sm:p-4 rounded-xl shadow-sm border border-slate-100 flex flex-col justify-between sm:col-span-2 lg:col-span-1">
+                <div class="h-[60vh] sm:aspect-[4/3] sm:h-auto overflow-hidden rounded-lg relative border border-slate-200">
+                    <div class="swiper sertifikatSwiper w-full h-full">
+                        <div class="swiper-wrapper">
+                            
+                            <!-- Slide 1 -->
+                            <div class="swiper-slide relative cursor-pointer group">
+                                <a href="media/sertifikat/get-file 5.pdf" target="_blank" class="absolute inset-0 z-10 block"></a>
+                                <object data="media/sertifikat/get-file 5.pdf" type="application/pdf" class="w-full h-full pointer-events-none">
+                                    <iframe src="media/sertifikat/get-file 5.pdf" class="w-full h-full pointer-events-none border-0"></iframe>
+                                </object>
+                            </div>
+
+                            <!-- Slide 2 -->
+                            <div class="swiper-slide relative cursor-pointer group">
+                                <a href="media/sertifikat/get-file 6.pdf" target="_blank" class="absolute inset-0 z-10 block"></a>
+                                <object data="media/sertifikat/get-file 6.pdf" type="application/pdf" class="w-full h-full pointer-events-none">
+                                    <iframe src="media/sertifikat/get-file 6.pdf" class="w-full h-full pointer-events-none border-0"></iframe>
+                                </object>
+                            </div>
+
+                            <!-- Slide 3 -->
+                            <div class="swiper-slide relative cursor-pointer group">
+                                <a href="media/sertifikat/get-file 7.pdf" target="_blank" class="absolute inset-0 z-10 block"></a>
+                                <object data="media/sertifikat/get-file 7.pdf" type="application/pdf" class="w-full h-full pointer-events-none">
+                                    <iframe src="media/sertifikat/get-file 7.pdf" class="w-full h-full pointer-events-none border-0"></iframe>
+                                </object>
+                            </div>
+
+                            <!-- Slide 4 -->
+                            <div class="swiper-slide relative cursor-pointer group">
+                                <a href="media/sertifikat/get-file 8.pdf" target="_blank" class="absolute inset-0 z-10 block"></a>
+                                <object data="media/sertifikat/get-file 8.pdf" type="application/pdf" class="w-full h-full pointer-events-none">
+                                    <iframe src="media/sertifikat/get-file 8.pdf" class="w-full h-full pointer-events-none border-0"></iframe>
+                                </object>
+                            </div>
+
+                            <!-- Slide 5 -->
+                            <div class="swiper-slide relative cursor-pointer group">
+                                <a href="media/sertifikat/get-file 9.pdf" target="_blank" class="absolute inset-0 z-10 block"></a>
+                                <object data="media/sertifikat/get-file 9.pdf" type="application/pdf" class="w-full h-full pointer-events-none">
+                                    <iframe src="media/sertifikat/get-file 9.pdf" class="w-full h-full pointer-events-none border-0"></iframe>
+                                </object>
+                            </div>
+
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next hidden sm:flex" onclick="event.stopPropagation()"></div>
+                        <div class="swiper-button-prev hidden sm:flex" onclick="event.stopPropagation()"></div>
+                    </div>
+                </div>
+                <p class="mt-4 font-bold text-slate-900 text-center text-sm">Sertifikat Partisipasi</p>
+            </div>
+            
+        </div>
+    </div>
+</section>
     
     <!-- Footer -->
     <footer class="bg-slate-900 pt-20 pb-10 px-4 text-center border-t-8 border-indigo-600">
