@@ -115,7 +115,7 @@
                 <div class="flex-1 flex justify-center md:justify-end">
                     <div class="relative">
                         <div class="absolute inset-0 bg-indigo-600 rounded-full blur-2xl opacity-20 transform translate-x-4 translate-y-4"></div>
-                        <img src="media/foto profil /foto utama.png" alt="Nurul Hakim" class="relative w-64 h-64 sm:w-72 sm:h-72 md:w-96 md:h-96 object-cover rounded-full shadow-2xl border-8 border-white z-10">
+                        <img src="media/foto profil /foto profil.png" alt="Nurul Hakim" class="relative w-64 h-64 sm:w-72 sm:h-72 md:w-96 md:h-96 object-cover rounded-full shadow-2xl border-8 border-white z-10">
                     </div>
                 </div>
             </div>
@@ -514,15 +514,25 @@
     </section>
 
     <!-- 07. Sertifikat -->
-    <section id="sertifikat" class="py-24 bg-slate-50 px-4">
+   <!-- 07. Sertifikat -->
+<section id="sertifikat" class="py-16 sm:py-24 bg-slate-50 px-4">
     <div class="max-w-7xl mx-auto">
-        <h2 class="text-3xl font-bold mb-12 text-center">Sertifikat</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Judul Bagian dengan style yang konsisten -->
+        <div class="flex items-center gap-4 sm:gap-6 mb-8 sm:mb-12">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">07. Sertifikat</h2>
+            <div class="h-1 bg-indigo-100 flex-1 rounded-full"></div>
+        </div>
+        
+        <p class="text-slate-600 text-sm sm:text-lg mb-8 sm:mb-10 text-center max-w-3xl mx-auto">
+            Berikut adalah beberapa sertifikat keahlian dan dokumentasi magang yang telah saya capai selama menempuh pendidikan.
+        </p>
+        
+        <!-- Grid disesuaikan untuk jarak antar kartu di mobile -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8">
             
             <!-- Sertifikat Kompetensi -->
-            <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+            <div class="bg-white p-3 sm:p-4 rounded-xl sm:rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between">
                 <div class="aspect-[4/3] overflow-hidden rounded-lg border border-slate-200 relative group cursor-pointer hover:shadow-md transition">
-                    <!-- Lapisan klik agar membuka PDF di tab baru -->
                     <a href="media/sertifikat/Sertifikasi Kompetensi.pdf" target="_blank" class="absolute inset-0 z-10 block" title="Buka PDF Penuh"></a>
                     <iframe 
                         src="media/sertifikat/Sertifikasi Kompetensi.pdf" 
@@ -530,13 +540,12 @@
                         title="Sertifikat Kompetensi">
                     </iframe>
                 </div>
-                <p class="mt-4 font-semibold text-center text-sm">Sertifikat Kompetensi</p>
+                <p class="mt-3 sm:mt-4 font-bold text-slate-900 text-center text-xs sm:text-sm">Sertifikat Kompetensi</p>
             </div>
             
             <!-- Sertifikat Magang -->
-            <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+            <div class="bg-white p-3 sm:p-4 rounded-xl sm:rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between">
                 <div class="aspect-[4/3] overflow-hidden rounded-lg border border-slate-200 relative group cursor-pointer hover:shadow-md transition">
-                    <!-- Lapisan klik agar membuka PDF di tab baru -->
                     <a href="media/sertifikat/CamScanner 01-10-25 22.38.pdf" target="_blank" class="absolute inset-0 z-10 block" title="Buka PDF Penuh"></a>
                     <iframe 
                         src="media/sertifikat/CamScanner 01-10-25 22.38.pdf" 
@@ -544,44 +553,43 @@
                         title="Sertifikat Magang">
                     </iframe>
                 </div>
-                <p class="mt-4 font-semibold text-center text-sm">Sertifikat Magang</p>
+                <p class="mt-3 sm:mt-4 font-bold text-slate-900 text-center text-xs sm:text-sm">Sertifikat Magang</p>
             </div>
             
             <!-- Sertifikat Partisipasi (Slider) -->
-            <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+            <!-- sm:col-span-2 lg:col-span-1 membuat letak kartu rapi jika dibuka di tablet -->
+            <div class="bg-white p-3 sm:p-4 rounded-xl sm:rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between sm:col-span-2 lg:col-span-1">
                 <div class="aspect-[4/3] overflow-hidden rounded-lg relative border border-slate-200">
-                    <div class="swiper sertifikatSwiper w-full h-full">
+                    <div class="swiper sertifikatSwiper swiper-sm w-full h-full">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide relative cursor-pointer group">
                                 <a href="media/sertifikat/get-file 5.pdf" target="_blank" class="absolute inset-0 z-10 block" title="Buka PDF Penuh"></a>
                                 <iframe src="media/sertifikat/get-file 5.pdf" class="w-full h-full border-0 pointer-events-none"></iframe>
                             </div>
-
                             <div class="swiper-slide relative cursor-pointer group">
                                 <a href="media/sertifikat/get-file 6.pdf" target="_blank" class="absolute inset-0 z-10 block" title="Buka PDF Penuh"></a>
                                 <iframe src="media/sertifikat/get-file 6.pdf" class="w-full h-full border-0 pointer-events-none"></iframe>
                             </div>
-
                             <div class="swiper-slide relative cursor-pointer group">
                                 <a href="media/sertifikat/get-file 7.pdf" target="_blank" class="absolute inset-0 z-10 block" title="Buka PDF Penuh"></a>
                                 <iframe src="media/sertifikat/get-file 7.pdf" class="w-full h-full border-0 pointer-events-none"></iframe>
                             </div>
-
                             <div class="swiper-slide relative cursor-pointer group">
                                 <a href="media/sertifikat/get-file 8.pdf" target="_blank" class="absolute inset-0 z-10 block" title="Buka PDF Penuh"></a>
                                 <iframe src="media/sertifikat/get-file 8.pdf" class="w-full h-full border-0 pointer-events-none"></iframe>
                             </div>
-
                             <div class="swiper-slide relative cursor-pointer group">
                                 <a href="media/sertifikat/get-file 9.pdf" target="_blank" class="absolute inset-0 z-10 block" title="Buka PDF Penuh"></a>
                                 <iframe src="media/sertifikat/get-file 9.pdf" class="w-full h-full border-0 pointer-events-none"></iframe>
                             </div>
                         </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                        <!-- Tombol panah di-hidden di mobile (karena pakai swipe tangan), tapi muncul (flex) di layar desktop/tablet -->
+                        <div class="swiper-button-next hidden sm:flex" onclick="event.stopPropagation()"></div>
+                        <div class="swiper-button-prev hidden sm:flex" onclick="event.stopPropagation()"></div>
                     </div>
                 </div>
-                <p class="mt-4 font-semibold text-center text-sm">Sertifikat Partisipasi</p>
+                <p class="mt-3 sm:mt-4 font-bold text-slate-900 text-center text-xs sm:text-sm">Sertifikat Partisipasi</p>
             </div>
             
         </div>
